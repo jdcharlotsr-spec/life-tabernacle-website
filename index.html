@@ -1,418 +1,77 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Life Tabernacle Church of Houston, TX</title>
-  <meta name="description" content="Life Tabernacle Church Houston is an Apostolic Pentecostal Oneness Church serving Houston, Texas near Hobby Airport. Experience Spirit-filled worship, Bible teaching, and the power of Jesus Christ." />
-  <meta name="keywords" content="Apostolic Church in Houston, Pentecostal Church near Hobby Airport, Oneness Pentecostal Church Houston TX, Life Tabernacle Church Houston, Apostolic Pentecostal Church Houston, churches near Bellfort Avenue, Apostolic Pentecostal Oneness Church Houston" />
-  <meta name="author" content="Life Tabernacle Church of Houston" />
-  <meta property="og:title" content="Life Tabernacle Church of Houston, TX" />
-  <meta property="og:description" content="An Apostolic Pentecostal Church with a refreshing approach to Kingdom Building in Southeast Houston." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ltministries.org" />
-  <meta property="og:image" content="https://ltministries.org/welcome-banner.png" />
+  <meta name="description" content="Life Tabernacle Church Houston is an Apostolic Pentecostal Oneness Church serving Houston, Texas near Hobby Airport. Experience Spirit-filled worship, Bible teaching, and the power of Jesus Christ.">
+  <meta name="keywords" content="Apostolic Church in Houston, Pentecostal Church near Hobby Airport, Oneness Pentecostal Church Houston TX, Life Tabernacle Church Houston, Apostolic Pentecostal Church Houston, churches near Bellfort Avenue">
+  <meta name="author" content="Life Tabernacle Church of Houston">
+  <meta property="og:title" content="Life Tabernacle Church of Houston, TX">
+  <meta property="og:description" content="An Apostolic Pentecostal Church with a refreshing approach to Kingdom Building in Southeast Houston.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ltministries.org">
+  <meta property="og:image" content="https://ltministries.org/welcome-banner.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --burgundy:#5b0f22;
-      --burgundy2:#7e1734;
-      --burgundy3:#320914;
-      --gold:#d7a844;
-      --gold2:#f2d27a;
-      --beige:#f4ead8;
-      --cream:#fff9ef;
-      --ink:#23171a;
-      --muted:#6e5960;
-      --shadow:0 22px 60px rgba(50,10,22,.22);
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,sans-serif;
-      background:radial-gradient(circle at top left,#fff7e7,#f5ead6 28%,#fffaf1 58%,#efe0c8);
-      color:var(--ink);
-      overflow-x:hidden;
-    }
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    .wrap{width:min(1180px,92%);margin:auto}
-    .kicker{color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem}
-    .serif{font-family:Cinzel,serif}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border-radius:999px;padding:14px 22px;font-weight:900;border:1px solid rgba(255,255,255,.25);box-shadow:0 12px 30px rgba(0,0,0,.16);transition:.25s;cursor:pointer;text-align:center}
-    .btn:hover{transform:translateY(-3px)}
-    .btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3b0d18}
-    .btn.burg{background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:white}
-
-    header{position:fixed;top:0;z-index:50;width:100%;background:linear-gradient(90deg,rgba(42,7,16,.96),rgba(91,15,34,.94),rgba(42,7,16,.96));backdrop-filter:blur(16px);border-bottom:1px solid rgba(242,210,122,.32);box-shadow:0 14px 40px rgba(0,0,0,.22)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;color:white;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;min-width:0}
-    .brand img{width:280px;max-height:62px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(215,168,68,.22))}
-    .brand span{position:absolute;left:-9999px}
-    .navlinks{display:flex;gap:10px;font-size:.84rem;font-weight:900;align-items:center}
-    .navlinks a{opacity:.92;border:1px solid transparent;border-radius:999px;padding:9px 10px;transition:.25s;white-space:nowrap}
-    .navlinks a:hover{color:#3b0d18;background:linear-gradient(135deg,var(--gold),var(--gold2));transform:translateY(-2px);box-shadow:0 10px 24px rgba(215,168,68,.24)}
-    .menuBtn{display:none;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3b0d18;border:0;border-radius:999px;padding:10px 14px;font-weight:900;cursor:pointer}
-
-    .hero{position:relative;padding:76px 0 0;background:#2a0710;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:76px 0 auto 0;height:90px;background:linear-gradient(180deg,rgba(0,0,0,.28),transparent);z-index:1;pointer-events:none}
-    .heroBanner{width:100%;min-height:420px;object-fit:cover;object-position:center;box-shadow:0 24px 70px rgba(58,7,21,.35)}
-    .heroQuick{background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:white;border-bottom:1px solid rgba(215,168,68,.35);box-shadow:0 18px 48px rgba(91,15,34,.18)}
-    .heroQuick .wrap{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;padding:18px 0}
-    .heroQuick a{font-weight:900;color:#fff7e8;border:1px solid rgba(242,210,122,.38);border-radius:999px;padding:10px 16px;transition:.25s}
-    .heroQuick a:hover{background:var(--gold);color:#3b0d18;transform:translateY(-2px)}
-
-    .countdown{position:relative;text-align:center;padding:28px 20px;background:linear-gradient(135deg,#fff,#fff6df);border-bottom:1px solid rgba(215,168,68,.35);box-shadow:0 14px 44px rgba(91,15,34,.08)}
-    .countdown h3{margin:0;color:var(--burgundy);font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em}
-    .countdownTimer{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:15px}
-    .timeBox{min-width:92px;background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:white;border-radius:20px;padding:16px 14px;box-shadow:0 12px 34px rgba(91,15,34,.2);border:1px solid rgba(242,210,122,.32)}
-    .timeBox strong{display:block;font-size:2rem;color:var(--gold2);line-height:1}
-    .timeBox span{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;font-weight:900}
-
-    section{padding:86px 0;position:relative}
-    .card,.glass,.formBox,.photoFrame,.twImg{transition:transform .28s ease, box-shadow .28s ease}
-    .card:hover,.glass:hover,.formBox:hover,.photoFrame:hover,.twImg:hover{transform:translateY(-6px);box-shadow:0 26px 70px rgba(91,15,34,.18)}
-    .sectionTitle{font-size:clamp(2rem,4vw,3.6rem);line-height:1.05;margin:8px 0 18px;color:var(--burgundy)}
-    .lead{font-size:1.08rem;line-height:1.8;color:var(--muted)}
-    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:center}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.beliefCards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:28px}
-    .card{background:rgba(255,255,255,.76);border:1px solid rgba(126,23,52,.12);border-radius:30px;padding:28px;box-shadow:0 16px 46px rgba(91,15,34,.09);position:relative;overflow:hidden}
-    .card:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(215,168,68,.14),transparent 45%);opacity:0;transition:.28s}
-    .card:hover:before{opacity:1}
-    .card>*{position:relative}
-    .icon{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));display:grid;place-items:center;color:var(--gold2);font-size:1.5rem;margin-bottom:16px}
-    .photoFrame{position:relative;border-radius:36px;padding:14px;background:linear-gradient(135deg,var(--gold),#fff3bc,var(--burgundy));box-shadow:var(--shadow)}
-    .photoFrame img{border-radius:26px;object-fit:cover;width:100%}
-    .glass{background:rgba(255,255,255,.78);border:1px solid rgba(215,168,68,.28);box-shadow:var(--shadow);border-radius:34px;padding:34px}
-    .scrollBox{max-height:360px;overflow-y:auto;padding-right:12px}
-    .scrollBox::-webkit-scrollbar{width:10px}
-    .scrollBox::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold),var(--burgundy));border-radius:99px}
-    .scrollBox p{line-height:1.85;color:#5f4b50}
-
-    .welcomeText{font-size:1.05rem;line-height:1.88;color:#5f4b50}
-    .welcomeText strong{color:var(--burgundy)}
-    .live{background:radial-gradient(circle at top left,rgba(215,168,68,.24),transparent 34%),linear-gradient(180deg,#fff9ef,#f7ead4)}
-    .live .card .btn{margin-top:10px;width:100%}
-    .youtube-container{position:relative;overflow:hidden;width:100%;padding-top:56.25%;border-radius:30px;box-shadow:0 20px 60px rgba(91,15,34,.20);border:3px solid rgba(215,168,68,.35);background:#000;margin-top:24px}
-    .youtube-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
-
-    .giving{background:linear-gradient(180deg,#fff9ef,#f1e1c5)}
-    .givePanel{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-    .formBox{background:white;border-radius:34px;padding:30px;border:1px solid rgba(215,168,68,.36);box-shadow:var(--shadow)}
-    .field{display:grid;gap:7px;margin:14px 0}
-    .field label{font-weight:900;color:var(--burgundy)}
-    .field input,.field select,.field textarea{padding:15px 16px;border-radius:14px;border:1px solid #ddc9a7;font:inherit;background:#fffdf8;width:100%}
-    .field textarea{min-height:110px;resize:vertical}
-    .paypal{width:100%;border:0;border-radius:999px;padding:16px 22px;background:#ffc439;font-weight:900;font-size:1rem;color:#16365c;cursor:pointer}
-
-    .ministry{background:radial-gradient(circle at top right,rgba(215,168,68,.22),transparent 32%),#fffaf0;position:relative;overflow:hidden}
-    .ministry:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:rgba(126,23,52,.08);right:-120px;top:-120px;animation:floatPulse 7s ease-in-out infinite}
-    .ministry:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(215,168,68,.12);left:-110px;bottom:-140px;animation:floatPulse 8s ease-in-out infinite reverse}
-    @keyframes floatPulse{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-18px) scale(1.05)}}
-    .womenGrid{display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;align-items:center}
-    .twImg{background:white;border-radius:34px;padding:18px;box-shadow:var(--shadow);border:1px solid rgba(215,168,68,.3)}
-    .twImg img{border-radius:24px}
-    .beliefs{background:#fffaf0}
-    .accordion{display:grid;gap:14px}
-    .accordion details{background:white;border-radius:22px;border:1px solid rgba(126,23,52,.14);box-shadow:0 12px 35px rgba(91,15,34,.08);overflow:hidden}
-    .accordion summary{cursor:pointer;padding:22px 26px;font-weight:900;color:var(--burgundy);display:flex;justify-content:space-between;align-items:center}
-    .accordion summary::-webkit-details-marker{display:none}
-    .accordion summary:after{content:"+";font-size:1.5rem;color:var(--gold)}
-    .accordion details[open] summary:after{content:"–"}
-    .accordion p{margin:0;padding:0 26px 24px;line-height:1.8;color:#5f4b50}
-
-    .visit{background:linear-gradient(135deg,#5b0f22,#7e1734 55%,#320914);color:white}
-    .visit .sectionTitle,.visit .lead{color:white}
-    .visit .formBox{background:rgba(255,255,255,.95)}
-    .leaders{background:linear-gradient(180deg,#f4ead8,#fff9ef)}
-    .leadersGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
-    .leaders img{border-radius:34px;box-shadow:var(--shadow)}
-    .location{background:linear-gradient(180deg,#fff9ef,#f4ead8)}
-    .mapFrame{overflow:hidden;border-radius:30px;border:1px solid rgba(215,168,68,.35);box-shadow:var(--shadow);background:white}
-    .mapFrame iframe{width:100%;height:440px;border:0;display:block}
-    .footerGrid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;text-align:left}
-    .footerCard{background:rgba(255,255,255,.06);border:1px solid rgba(242,210,122,.22);border-radius:24px;padding:22px}
-    footer{background:#2a0710;color:white;padding:48px 0 26px;text-align:center}
-    footer h3{font-family:Cinzel,serif;color:var(--gold2);margin-top:0}
-    footer p{line-height:1.7;color:#fff4dc}
-    .footerBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .finePrint{margin-top:28px;border-top:1px solid rgba(242,210,122,.18);padding-top:20px;color:#ead9bd}
-    .reveal{opacity:0;transform:translateY(28px);transition:.8s}
-    .reveal.show{opacity:1;transform:none}
-
-    @media(max-width:1050px){
-      .brand img{width:230px}
-      .navlinks{font-size:.78rem;gap:5px}
-      .navlinks a{padding:8px 7px}
-    }
-
-    @media(max-width:900px){
-      nav{height:auto;min-height:76px;align-items:flex-start;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
-      .menuBtn{display:inline-flex;margin-top:8px}
-      .navlinks{display:none;width:100%;flex-direction:column;background:rgba(42,7,16,.96);border:1px solid rgba(242,210,122,.25);border-radius:20px;padding:12px;margin-top:8px}
-      .navlinks.open{display:flex}
-      .navlinks a{width:100%;text-align:center;padding:12px}
-      .brand img{width:235px;max-width:72vw}
-      .hero{padding-top:76px}
-      .heroBanner{min-height:300px}
-      .split,.givePanel,.leadersGrid,.womenGrid,.footerGrid{grid-template-columns:1fr}
-      .cards,.beliefCards{grid-template-columns:1fr}
-      .scrollBox{max-height:430px}
-      .timeBox{min-width:75px;padding:13px 10px}
-      .timeBox strong{font-size:1.55rem}
-      section{padding:64px 0}
-      .glass,.formBox{padding:24px}
-      .heroQuick .wrap{gap:10px}.heroQuick a{font-size:.88rem;padding:9px 12px}
-    }
-
-    @media(max-width:520px){
-      .wrap{width:min(94%,1180px)}
-      .brand img{width:205px}
-      .heroBanner{min-height:240px}
-      .sectionTitle{font-size:2rem}
-      .lead{font-size:1rem}
-      .countdown h3{font-size:.9rem}
-      .countdownTimer{gap:8px}
-      .timeBox{min-width:68px;border-radius:16px}
-      .timeBox strong{font-size:1.35rem}
-      .timeBox span{font-size:.62rem}
-      .card{padding:22px;border-radius:24px}
-      .photoFrame,.glass,.formBox,.twImg{border-radius:24px}
-      .mapFrame iframe{height:320px}
-      .footerBtns .btn{width:100%}
-    }
+    :root{--burgundy:#5b0f22;--burgundy2:#7e1734;--gold:#d7a844;--gold2:#f2d27a;--beige:#f4ead8;--cream:#fff9ef;--ink:#23171a;--muted:#6e5960;--shadow:0 22px 60px rgba(50,10,22,.22)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at top left,#fff7e7,#f5ead6 28%,#fffaf1 58%,#efe0c8);color:var(--ink);overflow-x:hidden} a{text-decoration:none;color:inherit} img{max-width:100%;display:block}.wrap{width:min(1180px,92%);margin:auto}.kicker{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem}.serif{font-family:Cinzel,serif}.btn{display:inline-flex;align-items:center;gap:.6rem;border-radius:999px;padding:14px 22px;font-weight:800;border:1px solid rgba(255,255,255,.25);box-shadow:0 12px 30px rgba(0,0,0,.16);transition:.25s}.btn:hover{transform:translateY(-3px)}.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3b0d18}.btn.burg{background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:white}
+    header{position:fixed;top:0;z-index:20;width:100%;background:linear-gradient(90deg,rgba(42,7,16,.96),rgba(91,15,34,.92),rgba(42,7,16,.96));backdrop-filter:blur(16px);border-bottom:1px solid rgba(242,210,122,.32);box-shadow:0 14px 40px rgba(0,0,0,.22)}nav{height:76px;display:flex;align-items:center;justify-content:space-between;color:white}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.brand img{width:280px;max-height:62px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(215,168,68,.22))}.brand span{position:absolute;left:-9999px}.navlinks{display:flex;gap:10px;font-size:.86rem;font-weight:800}.navlinks a{opacity:.92;border:1px solid transparent;border-radius:999px;padding:9px 10px;transition:.25s}.navlinks a:hover{color:#3b0d18;background:linear-gradient(135deg,var(--gold),var(--gold2));transform:translateY(-2px);box-shadow:0 10px 24px rgba(215,168,68,.24)}.menuBtn{display:none;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3b0d18;border:0;border-radius:999px;padding:10px 14px;font-weight:900;cursor:pointer}
+    .hero{position:relative;padding:76px 0 0;background:#2a0710;overflow:hidden}.hero:before{content:"";position:absolute;inset:76px 0 auto 0;height:90px;background:linear-gradient(180deg,rgba(0,0,0,.28),transparent);z-index:1;pointer-events:none}.heroBanner{width:100%;min-height:420px;object-fit:cover;object-position:center;box-shadow:0 24px 70px rgba(58,7,21,.35)}.heroQuick{background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:white;border-bottom:1px solid rgba(215,168,68,.35);box-shadow:0 18px 48px rgba(91,15,34,.18)}.heroQuick .wrap{display:flex;gap:18px;justify-content:center;align-items:center;flex-wrap:wrap;padding:18px 0}.heroQuick a{font-weight:900;color:#fff7e8;border:1px solid rgba(242,210,122,.38);border-radius:999px;padding:10px 16px;transition:.25s}.heroQuick a:hover{background:var(--gold);color:#3b0d18;transform:translateY(-2px)}
+    section{padding:86px 0;position:relative}.card,.glass,.formBox,.photoFrame,.twImg{transition:transform .28s ease, box-shadow .28s ease}.card:hover,.glass:hover,.formBox:hover,.photoFrame:hover,.twImg:hover{transform:translateY(-6px);box-shadow:0 26px 70px rgba(91,15,34,.18)}.sectionTitle{font-size:clamp(2rem,4vw,3.6rem);line-height:1.05;margin:8px 0 18px;color:var(--burgundy)}.lead{font-size:1.08rem;line-height:1.8;color:var(--muted)}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:center}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:rgba(255,255,255,.74);border:1px solid rgba(126,23,52,.12);border-radius:30px;padding:28px;box-shadow:0 16px 46px rgba(91,15,34,.09)}.icon{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));display:grid;place-items:center;color:var(--gold2);font-size:1.5rem;margin-bottom:16px}.photoFrame{position:relative;border-radius:36px;padding:14px;background:linear-gradient(135deg,var(--gold),#fff3bc,var(--burgundy));box-shadow:var(--shadow)}.photoFrame img{border-radius:26px;object-fit:cover}.glass{background:rgba(255,255,255,.76);border:1px solid rgba(215,168,68,.28);box-shadow:var(--shadow);border-radius:34px;padding:34px}.scrollBox{max-height:360px;overflow-y:auto;padding-right:12px}.scrollBox::-webkit-scrollbar{width:10px}.scrollBox::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold),var(--burgundy));border-radius:99px}.scrollBox p{line-height:1.85;color:#5f4b50}
+    .welcomeText{font-size:1.05rem;line-height:1.88;color:#5f4b50}.welcomeText strong{color:var(--burgundy)}.giving{background:linear-gradient(180deg,#fff9ef,#f1e1c5)}.givePanel{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.formBox{background:white;border-radius:34px;padding:30px;border:1px solid rgba(215,168,68,.36);box-shadow:var(--shadow)}.field{display:grid;gap:7px;margin:14px 0}.field label{font-weight:800;color:var(--burgundy)}.field input,.field select,.field textarea{padding:15px 16px;border-radius:14px;border:1px solid #ddc9a7;font:inherit;background:#fffdf8}.field textarea{min-height:110px;resize:vertical}.paypal{width:100%;border:0;border-radius:999px;padding:16px 22px;background:#ffc439;font-weight:900;font-size:1rem;color:#16365c;cursor:pointer}.visit{background:linear-gradient(135deg,#5b0f22,#7e1734 55%,#320914);color:white}.visit .sectionTitle,.visit .lead{color:white}.visit .formBox{background:rgba(255,255,255,.95)}
+    .ministry{background:radial-gradient(circle at top right,rgba(215,168,68,.22),transparent 32%),#fffaf0;position:relative;overflow:hidden}.ministry:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:rgba(126,23,52,.08);right:-120px;top:-120px;animation:floatPulse 7s ease-in-out infinite}.ministry:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(215,168,68,.12);left:-110px;bottom:-140px;animation:floatPulse 8s ease-in-out infinite reverse}@keyframes floatPulse{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-18px) scale(1.05)}}.womenGrid{display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;align-items:center}.twImg{background:white;border-radius:34px;padding:18px;box-shadow:var(--shadow);border:1px solid rgba(215,168,68,.3)}.twImg img{border-radius:24px}.beliefs{background:#fffaf0}.accordion{display:grid;gap:14px}.accordion details{background:white;border-radius:22px;border:1px solid rgba(126,23,52,.14);box-shadow:0 12px 35px rgba(91,15,34,.08);overflow:hidden}.accordion summary{cursor:pointer;padding:22px 26px;font-weight:900;color:var(--burgundy);display:flex;justify-content:space-between;align-items:center}.accordion summary::-webkit-details-marker{display:none}.accordion summary:after{content:"+";font-size:1.5rem;color:var(--gold)}.accordion details[open] summary:after{content:"–"}.accordion p{margin:0;padding:0 26px 24px;line-height:1.8;color:#5f4b50}.leaders{background:linear-gradient(180deg,#f4ead8,#fff9ef)}.leadersGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}.leaders img{border-radius:34px;box-shadow:var(--shadow)}footer{background:#2a0710;color:white;padding:48px 0 26px;text-align:center}.reveal{opacity:0;transform:translateY(28px);transition:.8s}.reveal.show{opacity:1;transform:none}.countdown{position:relative;text-align:center;padding:28px 20px;background:linear-gradient(135deg,#fff,#fff6df);border-bottom:1px solid rgba(215,168,68,.35);box-shadow:0 14px 44px rgba(91,15,34,.08)}.countdown h3{margin:0;color:var(--burgundy);font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em}.countdownTimer{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:15px}.timeBox{min-width:92px;background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:white;border-radius:20px;padding:16px 14px;box-shadow:0 12px 34px rgba(91,15,34,.2);border:1px solid rgba(242,210,122,.32)}.timeBox strong{display:block;font-size:2rem;color:var(--gold2);line-height:1}.timeBox span{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;font-weight:900}.live{background:radial-gradient(circle at top left,rgba(215,168,68,.24),transparent 34%),linear-gradient(180deg,#fff9ef,#f7ead4)}.live .card .btn{margin-top:10px;width:100%}.youtube-container{position:relative;overflow:hidden;width:100%;padding-top:56.25%;border-radius:30px;box-shadow:0 20px 60px rgba(91,15,34,.20);border:3px solid rgba(215,168,68,.35);background:#000;margin-top:24px}.youtube-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}.location{background:linear-gradient(180deg,#fff9ef,#f4ead8)}.mapFrame{overflow:hidden;border-radius:30px;border:1px solid rgba(215,168,68,.35);box-shadow:var(--shadow);background:white}.mapFrame iframe{width:100%;height:440px;border:0;display:block}.footerGrid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;text-align:left}.footerCard{background:rgba(255,255,255,.06);border:1px solid rgba(242,210,122,.22);border-radius:24px;padding:22px}footer h3{font-family:Cinzel,serif;color:var(--gold2);margin-top:0}.footerBtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.finePrint{margin-top:28px;border-top:1px solid rgba(242,210,122,.18);padding-top:20px;color:#ead9bd}@media(max-width:900px){.navlinks{display:none}.brand img{width:240px}.split,.givePanel,.leadersGrid,.womenGrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:110px}.heroBanner{min-height:300px}.scrollBox{max-height:430px}}
   </style>
 </head>
 <body>
-  <header>
-    <nav class="wrap">
-      <a class="brand" href="#home"><img src="header-logo.png" alt="Life Tabernacle Church of Houston header logo"><span>Life Tabernacle</span></a>
-      <button class="menuBtn" type="button" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button>
-      <div class="navlinks">
-        <a href="#welcome">Welcome</a>
-        <a href="#live-stream">Live</a>
-        <a href="#about">About</a>
-        <a href="#giving">Giving</a>
-        <a href="#pastor">Pastor</a>
-        <a href="#women">Women</a>
-        <a href="#beliefs">Beliefs</a>
-        <a href="#visit">Visit</a>
-      </div>
-    </nav>
-  </header>
-
+  <header><nav class="wrap"><a class="brand" href="#home"><img src="header-logo.png" alt="Life Tabernacle Church of Houston header logo"><span>Life Tabernacle</span></a><button class="menuBtn" type="button" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button><div class="navlinks"><a href="#welcome">Welcome</a><a href="#watch-online">Watch</a><a href="#about">About</a><a href="#giving">Giving</a><a href="#pastor">Pastor</a><a href="#women">Women</a><a href="#beliefs">Beliefs</a><a href="#visit">Visit</a></div></nav></header>
   <main id="home">
-    <section class="hero">
-      <img class="heroBanner" src="welcome-banner.png" alt="Welcome to Life Tabernacle Church of Houston banner with address and service times">
-      <div class="countdown">
-        <h3>Next Worship Experience Begins In:</h3>
-        <div id="countdownTimer" class="countdownTimer">
-          <div class="timeBox"><strong>--</strong><span>Days</span></div>
-          <div class="timeBox"><strong>--</strong><span>Hours</span></div>
-          <div class="timeBox"><strong>--</strong><span>Minutes</span></div>
-          <div class="timeBox"><strong>--</strong><span>Seconds</span></div>
-        </div>
-      </div>
-      <div class="heroQuick">
-        <div class="wrap">
-          <a href="#visit">Plan Your Visit</a>
-          <a href="#giving">Give Online</a>
-          <a href="#watch-online">YouTube Player</a>
-          <a href="#beliefs">What We Believe</a>
-        </div>
-      </div>
-    </section>
+    <section class="hero"><img class="heroBanner" src="welcome-banner.png" alt="Welcome to Life Tabernacle Church of Houston banner with address and service times"><div class="countdown"><h3>Next Worship Experience Begins In:</h3><div id="countdownTimer" class="countdownTimer"><div class="timeBox"><strong>--</strong><span>Days</span></div><div class="timeBox"><strong>--</strong><span>Hours</span></div><div class="timeBox"><strong>--</strong><span>Minutes</span></div><div class="timeBox"><strong>--</strong><span>Seconds</span></div></div></div><div class="heroQuick"><div class="wrap"><a href="#visit">Plan Your Visit</a><a href="#giving">Give Online</a><a href="#watch-online">Watch Online</a><a href="#beliefs">What We Believe</a></div></div></section>
 
-    <section id="welcome">
-      <div class="wrap split reveal">
-        <div class="photoFrame"><img src="bishop-lady-ferguson.png" alt="Bishop Eddie and Lady Lorna Ferguson"></div>
-        <div>
-          <div class="kicker">Welcome</div>
-          <h2 class="sectionTitle serif">Welcome to Life Tabernacle!</h2>
-          <div class="glass welcomeText">
-            <p>Whether you’ve walked through our doors in person or joined us virtually, we greet you in the matchless name of Jesus Christ! Here at <strong>Life Tabernacle Ministries</strong>, we believe that every life has purpose, every soul has value, and every moment in the presence of God is an opportunity for transformation.</p>
-            <p>Under the anointed leadership of <strong>Bishop Eddie and Lady Lorna Ferguson</strong>, Life Tabernacle has become a place where the hurting find healing, the weary find strength, and the believer is empowered to live victoriously.</p>
-            <p>We invite you to worship with us and experience the power, love, and presence of God:<br>🕚 <strong>Sundays at 11:00 AM</strong> – In-Person Worship<br>💻 <strong>Wednesdays at 7:00 PM</strong> – Join us virtually for a midweek uplift!</p>
-            <p>No matter your past, present, or path, there’s life for you at Life Tabernacle. <strong>Welcome home.</strong></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="welcome"><div class="wrap split reveal"><div class="photoFrame"><img src="bishop-lady-ferguson.png" alt="Bishop Eddie and Lady Lorna Ferguson"></div><div><div class="kicker">Welcome</div><h2 class="sectionTitle serif">Welcome to Life Tabernacle!</h2><div class="glass welcomeText"><p>Whether you’ve walked through our doors in person or joined us virtually, we greet you in the matchless name of Jesus Christ! Here at <strong>Life Tabernacle Ministries</strong>, we believe that every life has purpose, every soul has value, and every moment in the presence of God is an opportunity for transformation.</p><p>Under the anointed leadership of <strong>Bishop Eddie and Lady Lorna Ferguson</strong>, Life Tabernacle has become a place where the hurting find healing, the weary find strength, and the believer is empowered to live victoriously.</p><p>We invite you to worship with us and experience the power, love, and presence of God:<br>🕚 <strong>Sundays at 11:00 AM</strong> – In-Person Worship<br>💻 <strong>Wednesdays</strong> – Join us virtually for a midweek uplift!</p><p>No matter your past, present, or path, there’s life for you at Life Tabernacle. <strong>Welcome home.</strong></p></div></div></div></section>
 
     <section id="watch-online" class="live">
       <div class="wrap reveal">
         <div class="kicker">Watch Online</div>
         <h2 class="sectionTitle serif">Life Tabernacle Live & On Demand</h2>
-        <p class="lead">Worship with us from anywhere. Add the church’s YouTube video, livestream, or channel ID below.</p>
+        <p class="lead">Join us online for worship, preaching, Bible teaching, and special events from Life Tabernacle Church of Houston.</p>
         <div class="youtube-container">
-          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Life Tabernacle Church YouTube Player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/videoseries?list=UU25ZhFQpjBs09blA4iNHAoQ"
+            title="Life Tabernacle Church Live Stream"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
         </div>
-        <div style="text-align:center;margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-          <a href="https://youtube.com" target="_blank" rel="noopener" class="btn burg">Visit Our YouTube Channel</a>
-          <a href="#visit" class="btn gold">Plan Your Visit</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrap reveal">
-        <div class="kicker">About Us</div>
-        <h2 class="sectionTitle serif">Progressive. Kingdom-building. Apostolic.</h2>
-        <div class="glass" style="margin-bottom:24px"><p class="lead" style="margin:0">What started in the Pastor's living room with two people has blossomed into a thriving Progressive, Kingdom Building Church in Southeast Houston, and we want you to be a part of it.</p></div>
-        <div class="cards">
-          <div class="card"><div class="icon">✚</div><h3>Apostolic</h3><p>We hold to the Bible standard of salvation and the revelation of Jesus Christ as God manifested in flesh.</p></div>
-          <div class="card"><div class="icon">🔥</div><h3>Pentecostal</h3><p>We believe the power and gifts of the Holy Ghost are for the church today.</p></div>
-          <div class="card"><div class="icon">☀</div><h3>Refreshing</h3><p>We blend timeless truth with practical ministry, hospitality, and forward-moving Kingdom vision.</p></div>
+        <div style="text-align:center;margin-top:25px;">
+          <a href="https://www.youtube.com/@lifetabinternationalminist7849" target="_blank" rel="noopener" class="btn burg">Visit Our YouTube Channel</a>
         </div>
       </div>
     </section>
 
-    <section id="giving" class="giving">
-      <div class="wrap givePanel reveal">
-        <div>
-          <div class="kicker">Online Giving</div>
-          <h2 class="sectionTitle serif">Support the work of ministry.</h2>
-          <p class="lead">Your generosity helps Life Tabernacle Church continue proclaiming the Gospel of Jesus Christ throughout Houston and beyond. Every gift supports ministry outreach, discipleship, worship, community service, and the ongoing work of building God's Kingdom.</p><p class="lead">We believe giving is an act of worship and gratitude. Whether your gift is large or small, your faithfulness enables lives to be touched, souls to be reached, and ministries to flourish.</p><p class="lead">Thank you for partnering with us as we impact our community with the love and power of Jesus Christ.</p>
-        </div>
-        <form class="formBox" action="https://www.paypal.com/donate" method="get" target="_blank">
-          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
-          <div class="field"><label for="give-name">Name</label><input id="give-name" name="custom" type="text" placeholder="Your full name"></div>
-          <div class="field"><label for="give-phone">Telephone Number</label><input id="give-phone" name="phone" type="tel" placeholder="(000) 000-0000"></div>
-          <div class="field"><label for="give-email">Email</label><input id="give-email" name="email" type="email" placeholder="name@example.com"></div>
-          <div class="field"><label for="give-amount">Amount</label><input id="give-amount" name="amount" type="number" min="1" step="0.01" placeholder="50.00"></div>
-          <button class="paypal" type="submit">Give Securely with PayPal</button>
-        </form>
-      </div>
-    </section>
+    <section id="about"><div class="wrap reveal"><div class="kicker">About Us</div><h2 class="sectionTitle serif">Progressive. Kingdom-building. Apostolic.</h2><div class="glass" style="margin-bottom:24px"><p class="lead" style="margin:0">What started in the Pastor's living room with two people has blossomed into a thriving Progressive, Kingdom Building Church in Southeast Houston, and we want you to be a part of it.</p></div><div class="cards"><div class="card"><div class="icon">✚</div><h3>Apostolic</h3><p>We hold to the Bible standard of salvation and the revelation of Jesus Christ as God manifested in flesh.</p></div><div class="card"><div class="icon">🔥</div><h3>Pentecostal</h3><p>We believe the power and gifts of the Holy Ghost are for the church today.</p></div><div class="card"><div class="icon">☀</div><h3>Refreshing</h3><p>We blend timeless truth with practical ministry, hospitality, and forward-moving Kingdom vision.</p></div></div></div></section>
 
-    <section id="pastor">
-      <div class="wrap split reveal">
-        <div>
-          <div class="kicker">About Our Pastor</div>
-          <h2 class="sectionTitle serif">Bishop Eddie Ferguson</h2>
-          <div class="glass scrollBox">
-            <p>Bishop Ferguson was born in Ashburn, Georgia. At the tender age of eight his family relocated to Houston, Texas. He attended the Houston Independent School District and became a popular athlete at Houston Sterling High School. In 1975 he became a born again Christian and turned in his uniform to become a soldier in the army of the Lord.</p>
-            <p>He was a dedicated young Christian during his high school years and developed a deep yearning for the word of God. After graduating from High School he further developed his training at Massey Business School and graduated with honors in 1979.</p>
-            <p>Eddie was raised in the United Pentecostal Church under Bishop James L. Kilgore. At an early age, Eddie became a Bible instructor, teaching as many as two Bible studies a week. Later he met the lovely Lorna McCalister and they married in 1980. They are blessed with two sons, Eddie Jr. and Edward Daniel.</p>
-            <p>Bishop Ferguson has acquired certification in Biblical Studies and counseling and still continues to pursue higher learning. Over the years he has helped to establish three churches, and in 1991 began a ministry in his home with two people. That work grew over the years and became the Life Tabernacle Church located on southeast side of Houston.</p>
-            <p>In 2009 he was elevated to the office of Bishop in Baltimore, MD and served as the State Bishop and Overseer of eleven churches in Texas. He continues to pastor a thriving church and travels all over the country preaching and teaching the gospel of Jesus Christ.</p>
-            <p>Bishop Ferguson and Lady Ferguson are blessed with seven grandchildren and enjoy reading, traveling and spending time with their family.</p>
-          </div>
-        </div>
-        <div class="photoFrame"><img src="bishop-eddie-ferguson.png" alt="Bishop Eddie Ferguson portrait"></div>
-      </div>
-    </section>
+    <section id="giving" class="giving"><div class="wrap givePanel reveal"><div><div class="kicker">Online Giving</div><h2 class="sectionTitle serif">Support the Work of Ministry</h2><p class="lead">Your generosity helps Life Tabernacle Church continue proclaiming the Gospel of Jesus Christ throughout Houston and beyond. Every gift supports ministry outreach, discipleship, worship, community service, and the ongoing work of building God's Kingdom.</p><p class="lead">We believe giving is an act of worship and gratitude. Whether your gift is large or small, your faithfulness enables lives to be touched, souls to be reached, and ministries to flourish.</p><p class="lead">Thank you for partnering with us as we impact our community with the love and power of Jesus Christ.</p></div><div class="formBox" style="text-align:center"><h3>Give Securely Online</h3><p class="lead">Click below to give through Life Tabernacle’s secure PayPal donation portal.</p><a class="paypal" style="display:inline-flex;justify-content:center;align-items:center;text-decoration:none;margin-top:16px" href="https://www.paypal.com/donate/?hosted_button_id=CBW7PRVG5ZB4S" target="_blank" rel="noopener">Give Securely with PayPal</a></div></div></section>
 
-    <section id="women" class="ministry">
-      <div class="wrap womenGrid reveal">
-        <div class="twImg"><img src="tough-women-logo.png" alt="Tough Women in Tough Times logo"><img src="lady-lorna-ferguson.png" alt="Lady Lorna Ferguson" style="margin-top:16px;border-radius:24px;max-height:360px;width:100%;object-fit:cover;object-position:top"></div>
-        <div>
-          <div class="kicker">Ladies Ministry</div>
-          <h2 class="sectionTitle serif">Tough Women in Tough Times</h2>
-          <div class="glass scrollBox">
-            <p>Our deepest desire is for every woman to experience true freedom in the Lord. As Isaiah 42:16 declares, “…I will make darkness light before them, and crooked things straight…” — we believe that no matter how broken the path, God is able to restore and redeem.</p>
-            <p>Tough Women in Tough Times is more than a ministry—it's a safe haven where women can find hope, healing, and restoration through Jesus Christ. We understand that healing is a journey, not a race. Women are encouraged to share their struggles at their own pace, learning to trust the Lord to bring calm in the midst of life’s storms.</p>
-            <p>This is a sacred space where the painful, hidden places of the past are met with God’s light. Here, women begin to walk in freedom, peace, and wholeness, discovering the abundant life Christ has promised. As hearts are mended and minds renewed, women develop a deeper, more intimate relationship with the Lord.</p>
-            <p>Through His power, Christ restores the years marked by sorrow and turns them into testimonies of grace. Tough Women in Tough Times is where women rise strong—not because life has been easy, but because God has been faithful.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="pastor"><div class="wrap split reveal"><div><div class="kicker">About Our Pastor</div><h2 class="sectionTitle serif">Bishop Eddie Ferguson</h2><div class="glass scrollBox"><p>Bishop Ferguson was born in Ashburn, Georgia. At the tender age of eight his family relocated to Houston, Texas. He attended the Houston Independent School District and became a popular athlete at Houston Sterling High School. In 1975 he became a born again Christian and turned in his uniform to become a soldier in the army of the Lord.</p><p>He was a dedicated young Christian during his high school years and developed a deep yearning for the word of God. After graduating from High School he further developed his training at Massey Business School and graduated with honors in 1979.</p><p>Eddie was raised in the United Pentecostal Church under Bishop James L. Kilgore. At an early age, Eddie became a Bible instructor, teaching as many as two Bible studies a week. Later he met the lovely Lorna McCalister and they married in 1980. They are blessed with two sons, Eddie Jr. and Edward Daniel.</p><p>Bishop Ferguson has acquired certification in Biblical Studies and counseling and still continues to pursue higher learning. Over the years he has helped to establish three churches, and in 1991 began a ministry in his home with two people. That work grew over the years and became the Life Tabernacle Church located on southeast side of Houston.</p><p>In 2009 he was elevated to the office of Bishop in Baltimore, MD and served as the State Bishop and Overseer of eleven churches in Texas. He continues to pastor a thriving church and travels all over the country preaching and teaching the gospel of Jesus Christ.</p><p>Bishop Ferguson and Lady Ferguson are blessed with seven grandchildren and enjoy reading, traveling and spending time with their family.</p></div></div><div class="photoFrame"><img src="bishop-eddie-ferguson.png" alt="Bishop Eddie Ferguson portrait"></div></div></section>
 
-    <section id="beliefs" class="beliefs">
-      <div class="wrap reveal">
-        <div class="kicker">What We Believe</div>
-        <h2 class="sectionTitle serif">What We Believe</h2>
-        <p class="lead">Life Tabernacle stands firmly upon the Apostolic faith, the power of the Holy Ghost, and the life-changing message of Jesus Christ.</p>
-        <div class="beliefCards">
-          <div class="card"><div class="icon">☩</div><h3>One God</h3><p>We believe there is only one God, Deuteronomy 6:4. He is the creator of heaven and earth, and of all living beings. He has revealed Himself to humanity as the Father, the Son, and the Holy Ghost.</p></div>
-          <div class="card"><div class="icon">💧</div><h3>Jesus Name Baptism</h3><p>We believe in water baptism by immersion in the Name of the Lord Jesus Christ for the remission of sin. Through baptism we identify with the death, burial, and resurrection of Jesus Christ.</p></div>
-          <div class="card"><div class="icon">🔥</div><h3>The Holy Ghost</h3><p>We believe in the Baptism of the Holy Ghost with the initial sign of speaking in other tongues, as the Spirit gives utterance.</p></div>
-          <div class="card"><div class="icon">✨</div><h3>Spiritual Gifts</h3><p>We believe in the manifestation of the gifts of the Holy Spirit, including healing, miracles, prophecy, wisdom, faith, helps, and government for the church today.</p></div>
-        </div>
-      </div>
-    </section>
+    <section id="women" class="ministry"><div class="wrap womenGrid reveal"><div class="twImg"><img src="tough-women-logo.png" alt="Tough Women in Tough Times logo"><img src="lady-lorna-ferguson.png" alt="Lady Lorna Ferguson" style="margin-top:16px;border-radius:24px;max-height:360px;width:100%;object-fit:cover;object-position:top"></div><div><div class="kicker">Ladies Ministry</div><h2 class="sectionTitle serif">Tough Women in Tough Times</h2><div class="glass scrollBox"><p>Our deepest desire is for every woman to experience true freedom in the Lord. As Isaiah 42:16 declares, “…I will make darkness light before them, and crooked things straight…” — we believe that no matter how broken the path, God is able to restore and redeem.</p><p>Tough Women in Tough Times is more than a ministry—it's a safe haven where women can find hope, healing, and restoration through Jesus Christ. We understand that healing is a journey, not a race. Women are encouraged to share their struggles at their own pace, learning to trust the Lord to bring calm in the midst of life’s storms.</p><p>This is a sacred space where the painful, hidden places of the past are met with God’s light. Here, women begin to walk in freedom, peace, and wholeness, discovering the abundant life Christ has promised. As hearts are mended and minds renewed, women develop a deeper, more intimate relationship with the Lord.</p><p>Through His power, Christ restores the years marked by sorrow and turns them into testimonies of grace. Tough Women in Tough Times is where women rise strong—not because life has been easy, but because God has been faithful.</p></div></div></div></section>
 
-    <section id="visit" class="visit">
-      <div class="wrap givePanel reveal">
-        <div>
-          <div class="kicker">Plan Your Visit</div>
-          <h2 class="sectionTitle serif">We are saving a seat for you.</h2>
-          <p class="lead">Visiting a new church can feel overwhelming, but we want your experience at Life Tabernacle to be warm, welcoming, and stress-free.</p><p class="lead">From the moment you arrive, you will be greeted by friendly people who are excited to worship with you. Whether you are exploring faith, looking for a church home, or simply visiting Houston, there is a place for you here.</p><p class="lead">Let us know you're coming so we can personally welcome you and help make your first visit a meaningful experience.</p>
-        </div>
-        <form class="formBox" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-          <div class="field"><label for="visit-name">Name</label><input id="visit-name" name="name" type="text" placeholder="Your full name" required></div>
-          <div class="field"><label for="visit-phone">Telephone Number</label><input id="visit-phone" name="phone" type="tel" placeholder="(000) 000-0000"></div>
-          <div class="field"><label for="visit-email">Email</label><input id="visit-email" name="email" type="email" placeholder="name@example.com" required></div>
-          <div class="field"><label for="visit-service">Service You Plan to Attend</label><select id="visit-service" name="service"><option>Sunday 11:00 AM - In-Person Worship</option><option>Wednesday 7:00 PM - Virtual Midweek Uplift</option><option>Special Event / Other</option></select></div>
-          <div class="field"><label for="visit-note">How can we serve you?</label><textarea id="visit-note" name="message" placeholder="Children attending, prayer request, first-time visitor, accessibility needs, etc."></textarea></div>
-          <button class="btn burg" type="submit">Submit Visit Form</button>
-        </form>
-      </div>
-    </section>
+    <section id="beliefs" class="beliefs"><div class="wrap reveal"><div class="kicker">What We Believe</div><h2 class="sectionTitle serif">What We Believe</h2><div class="accordion">
+      <details open><summary>One God</summary><p>We believe there is only one God, Deuteronomy 6:4. He is the creator of heaven and earth, and of all living beings. He has revealed Himself to humanity as the Father (Creator), as the Son (Savior), and as the Holy Ghost (indwelling Spirit, breath of Life).</p></details>
+      <details><summary>Water Baptism in Jesus’ Name</summary><p>We believe in water baptism by immersion in the Name of the Lord Jesus Christ for the remission of sin. Through baptism we identify with the death, burial and resurrection of Jesus Christ, Romans 6:3-6; Colossians 2:11-14; Acts 2:38.</p></details>
+      <details><summary>The Baptism of the Holy Ghost</summary><p>We believe in the Baptism of the Holy Ghost with the initial sign of speaking in other tongues, Acts 2:4.</p></details>
+      <details><summary>Gifts of the Holy Spirit</summary><p>We believe in the manifestation of the gifts of the Holy Spirit. He ministers to His people through tongues, interpretation of tongues, prophecy, words of knowledge and wisdom, discerning of spirits, faith, working of miracles, healing, helps and government. Mark 16:15-18; Acts 5:16; 2 Corinthians 12:1-11.</p></details>
+    </div></div></section>
 
-    <section class="leaders">
-      <div class="wrap leadersGrid reveal">
-        <img src="ministers-leaders.png" alt="Life Tabernacle ministers and leaders">
-        <div><div class="kicker">Leadership</div><h2 class="sectionTitle serif">Serving together for the Kingdom.</h2><p class="lead">Life Tabernacle is strengthened by faithful ministers and leaders committed to worship, witness, teaching, care, and service.</p></div>
-      </div>
-    </section>
+    <section id="visit" class="visit"><div class="wrap givePanel reveal"><div><div class="kicker">Plan Your Visit</div><h2 class="sectionTitle serif">We are saving a seat for you.</h2><p class="lead">Let us know you are coming. Replace YOUR_FORMSPREE_ID with your real Formspree ID so submissions go directly to the church email.</p></div><form class="formBox" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST"><div class="field"><label for="visit-name">Name</label><input id="visit-name" name="name" type="text" placeholder="Your full name" required></div><div class="field"><label for="visit-phone">Telephone Number</label><input id="visit-phone" name="phone" type="tel" placeholder="(000) 000-0000"></div><div class="field"><label for="visit-email">Email</label><input id="visit-email" name="email" type="email" placeholder="name@example.com" required></div><div class="field"><label for="visit-service">Service You Plan to Attend</label><select id="visit-service" name="service"><option>Sunday 11:00 AM - In-Person Worship</option><option>Wednesday 7:00 PM - Virtual Midweek Uplift</option><option>Special Event / Other</option></select></div><div class="field"><label for="visit-note">How can we serve you?</label><textarea id="visit-note" name="message" placeholder="Children attending, prayer request, first-time visitor, accessibility needs, etc."></textarea></div><button class="btn burg" type="submit">Submit Visit Form</button></form></div></section>
 
-    <section id="location" class="location">
-      <div class="wrap reveal">
-        <div class="kicker">Find Us</div>
-        <h2 class="sectionTitle serif">Visit Life Tabernacle</h2>
-        <p class="lead">6948 Bellfort Ave, Houston, TX 77087</p>
-        <div class="mapFrame"><iframe src="https://www.google.com/maps?q=6948+Bellfort+Ave+Houston+TX+77087&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Life Tabernacle Church location map"></iframe></div>
-      </div>
-    </section>
+    <section class="leaders"><div class="wrap leadersGrid reveal"><img src="ministers-leaders.png" alt="Life Tabernacle ministers and leaders"><div><div class="kicker">Leadership</div><h2 class="sectionTitle serif">Serving together for the Kingdom.</h2><p class="lead">Life Tabernacle is strengthened by faithful ministers and leaders committed to worship, witness, teaching, care, and service.</p></div></div></section>
+
+    <section id="location" class="location"><div class="wrap reveal"><div class="kicker">Find Us</div><h2 class="sectionTitle serif">Visit Life Tabernacle</h2><p class="lead">6948 Bellfort Ave, Houston, TX 77087</p><div class="mapFrame"><iframe src="https://www.google.com/maps?q=6948+Bellfort+Ave+Houston+TX+77087&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Life Tabernacle Church location map"></iframe></div></div></section>
   </main>
-
-  <footer>
-    <div class="wrap footerGrid">
-      <div class="footerCard"><h3>Life Tabernacle Church of Houston</h3><p>An Apostolic Pentecostal Church with a refreshing approach to Kingdom Building.</p><p><strong>Address:</strong><br>6948 Bellfort Ave<br>Houston, TX 77087</p></div>
-      <div class="footerCard"><h3>Service Times</h3><p>🕚 Sunday Worship<br><strong>11:00 AM</strong></p><p>💻 Wednesday Virtual Service<br><strong>7:00 PM</strong></p></div>
-      <div class="footerCard"><h3>Contact & Connect</h3><p>📞 <strong>(713) 291-4581</strong><br>✉ <strong>info@ltministries.org</strong></p><div class="footerBtns"><a href="https://facebook.com" target="_blank" rel="noopener" class="btn gold">Facebook</a><a href="https://youtube.com" target="_blank" rel="noopener" class="btn gold">YouTube</a></div></div>
-    </div>
-    <div class="wrap finePrint">© <span id="year"></span> Life Tabernacle Church. All rights reserved.</div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-
-    const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.15});
-    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-    document.querySelectorAll('.accordion details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.accordion details').forEach(o=>{if(o!==d)o.open=false})}));
-
-    document.querySelectorAll('.navlinks a').forEach(link=>link.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));
-
-    function nextSundayAtEleven(){
-      const now=new Date();
-      const next=new Date(now);
-      const daysUntilSunday=(7-now.getDay())%7;
-      if(daysUntilSunday===0&&now.getHours()>=11){next.setDate(now.getDate()+7)}else{next.setDate(now.getDate()+daysUntilSunday)}
-      next.setHours(11,0,0,0);
-      return next;
-    }
-
-    function updateCountdown(){
-      const timer=document.getElementById('countdownTimer');
-      if(!timer)return;
-      const now=new Date();
-      const target=nextSundayAtEleven();
-      const diff=Math.max(0,target-now);
-      const days=Math.floor(diff/(1000*60*60*24));
-      const hours=Math.floor((diff/(1000*60*60))%24);
-      const minutes=Math.floor((diff/(1000*60))%60);
-      const seconds=Math.floor((diff/1000)%60);
-      timer.innerHTML=`<div class="timeBox"><strong>${days}</strong><span>Days</span></div><div class="timeBox"><strong>${hours}</strong><span>Hours</span></div><div class="timeBox"><strong>${minutes}</strong><span>Minutes</span></div><div class="timeBox"><strong>${seconds}</strong><span>Seconds</span></div>`;
-    }
-    updateCountdown();setInterval(updateCountdown,1000);
-  </script>
+  <footer><div class="wrap footerGrid"><div class="footerCard"><h3>Life Tabernacle Church of Houston</h3><p>An Apostolic Pentecostal Church with a refreshing approach to Kingdom Building.</p><p><strong>Address:</strong><br>6948 Bellfort Ave<br>Houston, TX 77087</p></div><div class="footerCard"><h3>Service Times</h3><p>🕚 Sunday Worship<br><strong>11:00 AM</strong></p><p>💻 Wednesday Virtual Service<br><strong>7:00 PM</strong></p></div><div class="footerCard"><h3>Contact & Connect</h3><p>📞 <strong>(713) 291-4581</strong><br>✉ <strong>info@ltministries.org</strong></p><div class="footerBtns"><a href="https://www.facebook.com/LifeatBellfort/" target="_blank" rel="noopener" class="btn gold">Facebook</a><a href="https://www.youtube.com/@lifetabinternationalminist7849" target="_blank" rel="noopener" class="btn gold">YouTube</a></div></div></div><div class="wrap finePrint">© <span id="year"></span> Life Tabernacle Church. All rights reserved.</div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}),{threshold:.15});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));document.querySelectorAll('.accordion details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.accordion details').forEach(o=>{if(o!==d)o.open=false})}));document.querySelectorAll('.navlinks a').forEach(link=>link.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));function nextSundayAtEleven(){const now=new Date();const next=new Date(now);const daysUntilSunday=(7-now.getDay())%7;if(daysUntilSunday===0&&now.getHours()>=11){next.setDate(now.getDate()+7)}else{next.setDate(now.getDate()+daysUntilSunday)}next.setHours(11,0,0,0);return next}function updateCountdown(){const timer=document.getElementById('countdownTimer');if(!timer)return;const now=new Date();const target=nextSundayAtEleven();const diff=Math.max(0,target-now);const days=Math.floor(diff/(1000*60*60*24));const hours=Math.floor((diff/(1000*60*60))%24);const minutes=Math.floor((diff/(1000*60))%60);const seconds=Math.floor((diff/1000)%60);timer.innerHTML=`<div class="timeBox"><strong>${days}</strong><span>Days</span></div><div class="timeBox"><strong>${hours}</strong><span>Hours</span></div><div class="timeBox"><strong>${minutes}</strong><span>Minutes</span></div><div class="timeBox"><strong>${seconds}</strong><span>Seconds</span></div>`}updateCountdown();setInterval(updateCountdown,1000);</script>
 </body>
 </html>
